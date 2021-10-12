@@ -22,7 +22,7 @@ outputs:
     description: 'Build status'
 runs:
   using: 'docker'
-  image: 'yintro4ha/build-jenkins-job-ha:v1'
+  image: 'docker://yintro4ha/build-jenkins-job-ha:v1'
   args:
     - ${{ inputs.jenkins-url}}
     - ${{ inputs.jenkins-token}}
